@@ -12,7 +12,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "predeploy": "yarn run build",
+    "predeploy": "npm run build",
   "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
@@ -20,4 +20,3 @@
     "gh-pages": "^1.2.0"
   }
 }
-$ git remote add origin https://github.com/celsooliveiraTBDE/react-memory-game.git

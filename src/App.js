@@ -64,12 +64,12 @@ class App extends Component {
   render() {
     return (
       <div>
-        <h1>HELLO{this.score}</h1>
-
+       
         <Navbar />
 
-        <Panel>
-        </Panel>
+        <Panel score={this.state.score} />
+        
+        
 
         <Wrapper>
           <Title>Memory Game</Title>
@@ -82,7 +82,7 @@ class App extends Component {
               image={drink.image}
               spirit={drink.spirit}
               character={drink.character}
-              score={this.score}
+              score={this.state.score}
             />
           ))}
         </Wrapper>

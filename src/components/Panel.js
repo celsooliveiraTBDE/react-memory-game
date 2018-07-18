@@ -18,11 +18,11 @@ const styles = {
   }
 };
 
-const Panel = () => (
+const Panel = props => (
   <div style={styles.panel}>
-    <div style={styles.heading}>Memory Game</div>
+    <div style={styles.heading}>Score</div>
     <div style={styles.content}>
-  Drink more than once and you must start over! 
+  So far, you've flipped {props.score} cards without repeating it!
     </div>
   </div>
 );
